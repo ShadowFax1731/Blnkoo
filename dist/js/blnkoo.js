@@ -1,3 +1,9 @@
+/*!
+ * Blnkoo  v1.1.0 (https://blnkoo.vercel.app/)
+ * Copyright 2024-2024 The Blnkoo Authors
+ * Licensed under MIT (https://github.com/aakki16/blnkoo/LICENSE)
+*/
+
 /** Copy To Clipboard **/
 function clipboard(id){
   let ie = document.createElement("input");
