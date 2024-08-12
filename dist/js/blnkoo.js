@@ -1,181 +1,185 @@
-/*!
- * Blnkoo  v1.1.0 (https://blnkoo.com/)
- * Copyright 2024-2024 The Blnkoo Authors
- * Licensed under MIT (https://github.com/aakki16/blnkoo/LICENSE)
-*/
-
-/** Copy Js **/
-const Clipboard = (() => {
-  var txtBtnClass = 'text-to-copy';
-  var btnClassName = 'copy-btn';
-  var allowingButtonTextToChange = true;
-  var afterCopyText = {
-    desktop: 'Copy Again',
-    iPad: "Now tap the text, then 'Copy'",
-    iPhoneOriPod: "Now tap 'Copy'",
-    oldSafari: 'Press Command + C to copy',
-    notSupported: 'Please copy manually',
-  };
-  var sets = {};
-  var regexBuilder = function(prefix){
-    return new RegExp(prefix + '\\S*');
-  };
-  
-  window.addEventListener('DOMContentLoaded', function(){
-    var texts = Array.prototype.slice.call(
-      document.querySelectorAll('[class*=' + txtBtnClass + ']')
-    ); 
-    var buttons = Array.prototype.slice.call(
-      document.querySelectorAll('[class*=' + btnClassName + ']')
-    );
-    var classNameFinder = function(arr, regex, namePrefix){
-      return arr.map(function(item){
-        return item.className.match(regex) ? item.className.match(regex)[0].replace(namePrefix, '') : false;
-      })
-      .sort();
-    };
-    sets.texts = classNameFinder(
-      texts,
-      regexBuilder(txtBtnClass),txtBtnClass
-    );
-    sets.buttons = classNameFinder(
-      buttons,
-      regexBuilder(btnClassName),btnClassName
-    );
-    var matches = sets.texts.map(function(ignore, index) {
-      return sets.texts[index].match(sets.buttons[index]);
-    });
-    var throwErr = function(err) {
-      throw new Error(err);
-    };
-    var iPhoneORiPod = false;
-    var iPad = false;
-    var oldSafari = false;
-    var navAgent = window.navigator.userAgent;
-    
-    if(/^((?!chrome).)*safari/i.test(navAgent) && !/^((?!chrome).)*[0-9][0-9](\.[0-9][0-9]?)?\ssafari/i.test(navAgent)){
-      oldSafari = true;
-    }
-    if (navAgent.match(/iPhone|iPod/i)){
-      iPhoneORiPod = true;
-    } else if(navAgent.match(/iPad/i)){
-      iPad = true;
-    }
-    
-    var clipboard = function(btn, text){
-      var copyBtn = document.querySelector(btn);
-      var setCopyBtnText = function(textToSet){
-        copyBtn.textContent = textToSet;
-      };
-      if(iPhoneORiPod || iPad){
-        if(oldSafari){
-          setCopyBtnText('Select text');
-        }
-      }
-      if(copyBtn){
-        copyBtn.addEventListener('click', function(){
-          var oldPosX = window.scrollX;
-          var oldPosY = window.scrollY;
-          var originalCopyItem = document.querySelector(text);
-          var dollyTheSheep = originalCopyItem.cloneNode(true);
-          var copyItem = document.createElement('textarea');
-          copyItem.style.opacity = 0;
-          copyItem.style.position = 'absolute';
-          var copyValue = dollyTheSheep.value || dollyTheSheep.textContent;
-          copyItem.value = copyValue;
-          document.body.appendChild(copyItem);
-          if(copyItem){
-            copyItem.focus();
-            copyItem.selectionStart = 0;
-            copyItem.selectionEnd = copyValue.length;
-            try{
-              document.execCommand('copy');
-              copyItem.setAttribute('disabled', true);
-              if(allowingButtonTextToChange){
-                if(oldSafari){
-                  if(iPhoneORiPod){
-                    setCopyBtnText(
-                      afterCopyText.iPhoneOriPod
-                    );
-                  }else if(iPad){
-                    setCopyBtnText(afterCopyText.iPad);
-                  }else{
-                    setCopyBtnText(afterCopyText.oldSafari);
-                  }
-                }else{
-                  document.activeElement.blur();
-                  setCopyBtnText(afterCopyText.desktop);
-                }
-              }
-            }catch (ignore){
-              if(allowingButtonTextToChange){
-                setCopyBtnText(afterCopyText.notSupported);
-              }
-            }
-            originalCopyItem.focus();
-              window.scrollTo(oldPosX, oldPosY);
-              originalCopyItem.selectionStart = 0;
-              originalCopyItem.selectionEnd = copyValue.length;
-              copyItem.remove();
-          }else{
-            throwErr("You don't have an element with the class: '" + txtBtnClass + "'. Please check the cheval README.");
-          }
-        });
-      }else{
-        throwErr("You don't have a <button> with the class: '" + btnClassName + "'. Please check the cheval README.");
-      }
-    };
-    matches.forEach(function(i) {
-      return clipboard('.' + btnClassName + i, '.' + txtBtnClass + i);
-    }); 
-    try{
-      window.clipboard = clipboard;
-      module.exports = clipboard;
-    } catch (ignore) {}
-  });
-})();
-export default Clipboard;
-
-/** Modal Function **/
-export function modal(e){
-  document.addEventListener('DOMContentLoaded', () => {
-    const openModalBtn = document.getElementById('open-modal');
-    const closeModalBtn = document.getElementById('close-modal');
-    const modalOverlay = document.getElementById('modal-overlay');
-    openModalBtn.addEventListener('click', () => {
-      modalOverlay.classList.add('show');
-    });
-    closeModalBtn.addEventListener('click', () => {
-      modalOverlay.classList.remove('show');
-    });
-    window.addEventListener('click', (e) => {
-      if (e.target === modalOverlay) {
-        modalOverlay.classList.remove('show');
-      }
-    });
-  });
+/** Copy To Clipboard **/
+function clipboard(id){
+  let ie = document.createElement("input");
+  ie.type = "text";
+  let copyText = document.getElementById(id).innerHTML;
+  ie.value = copyText;
+  document.body.appendChild(ie);
+  ie.select();
+  document.execCommand('copy');
+  document.body.removeChild(ie);
+  /** Common Alert Message **/
+  document.getElementById("clipboardAlert").style.display = "block";
+  setTimeout(function() {
+    document.getElementById("clipboardAlert").style.display = "none";
+  }, 1000);
 }
 
-/** Alert **/
-/*function alertdismiss(){
-  var btndismiss = document.querySelectorAll('[data-dismiss]');
-    btndismiss.forEach(function(button){
-      button.addEventListener('click', function() {
-      var targetId = button.getAttribute('data-dismiss');
-      var targetElement = document.getElementById(targetId);
-        if(targetElement){
-          targetElement.style.display = 'none';
+/** Pause **/
+const pause = (callback, timeout = 0) => {
+  if (typeof callback !== 'function') return;
+  return window.setTimeout(callback, timeout);
+};
+
+/** Offcanvas **/
+(function(root, factory){
+  if(typeof define === 'function' && define.amd){
+    define([], factory);
+  }else if(typeof module === 'object' && module.exports){
+    module.exports = factory();
+  }else{
+    root.offcanvas = factory();
+  }
+}(this, function(){
+  'use strict';
+  function testPassive(){
+    var supportsPassive = false;
+    try{
+      var options = Object.defineProperty({}, 'passive',{
+        get: function(){
+          supportsPassive = true;
         }
       });
-    });
+      window.addEventListener('testPassive', null, options);
+      window.removeEventListener('testPassive', null, options);
+    }catch (e){}
+    return supportsPassive;
   }
-  function setupAlertDismiss(buttonId, elementId){
-    var button = document.getElementById(buttonId);
-    if(button){
-      button.setAttribute('data-dismiss', elementId);
+  function getScrollbarSize(){
+    var scrollDiv = document.createElement('div');
+    scrollDiv.style.cssText = 'width: 99px; height: 99px; overflow: scroll; position: absolute; top: -9999px;';
+    document.body.appendChild(scrollDiv);
+    var scrollbarSize = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+    document.body.removeChild(scrollDiv);
+    return scrollbarSize;
+  }
+  var supportsPassive = testPassive();
+  var scrollbarSize = getScrollbarSize();
+  var offcanvas = function(element, options){
+    var panel = typeof element === 'string' ? document.querySelector(element) : element;
+    if(! panel) return false;
+    var html = document.documentElement;
+    var blockerElement = document.getElementsByClassName('offcanvas-blocker')[0];
+    var closeElement = panel.querySelector('[data-close]');
+    var panelContent = panel.querySelector('.offcanvas-content');
+    var settings = {
+      closeOnEsc: true,
+      closeOnClick: true,
+      disableOverscroll: true,
+      disableBodyscroll: false,
+      activeClass: 'offcanvas-active',
+      onOpen: function() {},
+      onClose: function() {}
+    };
+    for(var key in options){
+      if (settings.hasOwnProperty(key)){
+        settings[key] = options[key];
+      }
     }
-    alertdismiss();
-  }
+    var api = {
+      isOpen: false,
+      open: function(e){
+        if (! api.isOpen){
+          api.isOpen = true;
+          panel.classList.add('panel-active');
+          html.classList.add(settings.activeClass);
+          if (document.body.scrollHeight > window.innerHeight) {
+            html.style.paddingRight = scrollbarSize + 'px';
+            Array.prototype.forEach.call(document.getElementsByClassName('offcanvas-push'), function(el) {
+              el.style.paddingRight = scrollbarSize + 'px';
+            });
+          }
+          if(e){
+            api.activeElement = e.currentTarget;
+            api.activeElement.setAttribute('aria-expanded', true);
+          }
+          panel.setAttribute('aria-hidden', false);
+          panelContent.focus();
+          settings.onOpen(panel);
+        }
+      },
+      close: function(e) {
+        if (api.isOpen) {
+          api.isOpen = false;
+          panel.classList.remove('panel-active');
+          html.classList.remove(settings.activeClass);
+          html.style.paddingRight = '';
+          Array.prototype.forEach.call(document.getElementsByClassName('offcanvas-push'), function(el) {
+            el.style.paddingRight = '';
+          });
+          if (api.activeElement) {
+            api.activeElement.setAttribute('aria-expanded', false);
+            api.activeElement.focus();
+          }
+          panel.setAttribute('aria-hidden', true);
+          settings.onClose(panel);
+        }
+      },
+      toggle: function(e) {
+        if (api.isOpen) {
+          api.close(e);
+        } else {
+          api.open(e);
+        }
+      },
+      disableOverscroll: function(el) {
+        el.addEventListener('touchstart', function() {
+          if (el.scrollTop === 0) {
+            el.scrollTop = 1;
+          } else if (el.scrollTop + el.offsetHeight === el.scrollHeight) {
+            el.scrollTop = el.scrollTop - 1;
+          }
+        });
+      },
+      disableBodyscroll: function(el) {
+        document.body.addEventListener('touchmove', function(e) {
+          if (api.isOpen) {
+            if (el.scrollHeight <= el.clientHeight) {
+              e.preventDefault();
+            }
+          }
+        }, supportsPassive ? { passive: false } : false);
+      }
+    };
+    panel.addEventListener('transitionend', function(e) {
+      if (e.propertyName == 'opacity') {
+        if (api.isOpen) {
+          html.classList.add('offcanvas-animated');
+        } else {
+          html.classList.remove('offcanvas-animated');
+        }
+      }
+    });
+    if(! (window.CSS && CSS.supports('overscroll-behavior', 'contain'))){
+      if (settings.disableOverscroll){
+        api.disableOverscroll(panelContent);
+      }
+      if (settings.disableBodyscroll){
+        api.disableBodyscroll(panelContent);
+      }
+    }
+    if (settings.closeOnEsc){
+      document.addEventListener('keydown', function(e) {
+        if (e.keyCode === 27) {
+          api.close(e);
+        }
+      });
+    }
+    if (typeof blockerElement === 'undefined'){
+      blockerElement = document.createElement('div');
+      blockerElement.className = 'offcanvas-blocker';
+      document.body.appendChild(blockerElement);
+    }
+    if (settings.closeOnClick){
+      blockerElement.addEventListener('click', api.close);
+    }
+    if (closeElement){
+      closeElement.addEventListener('click', api.close);
+    }
+    panelContent.setAttribute('tabindex', '-1');
+    panel.offcanvas = api;
 
-// Set up the Alert Dismiss Button
-setupAlertDismiss('alert-btn-dismiss', 'alert-dismiss');*/
+    return api;
+  };
+  return offcanvas;
+}));
