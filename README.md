@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://github.com/aakki16/Blnkoo">
-    <img src="./logo.svg" alt="Logo" width="125" height="125">
+    <img src="./logo.svg" alt="Logo" width="250" height="250">
   </a>
 </h1>
 
