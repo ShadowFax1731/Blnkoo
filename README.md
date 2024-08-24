@@ -1,3 +1,9 @@
+[![Contributors][contributors-shield]][./CONTRIBUTORS.md]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][https://github.com/aakki16/Blnkoo/issues]
+[![MIT License][license-shield]][./LICENSE]
+
 <h1 align="center">
   <a href="https://github.com/aakki16/Blnkoo">
     <img src="./logo.svg" alt="Logo" width="250" height="250">
