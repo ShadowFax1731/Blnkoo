@@ -1,4 +1,4 @@
-<a id="#rdme-top"></a>
+<a id="rdme-top"></a>
 
 <h1 align="center">
   <a href="https://github.com/aakki16/Blnkoo">
@@ -44,6 +44,14 @@ Several quick start options are available:
 - Install with Composer: ```composer require aakki16/blnkoo```
 - Read the [Getting started]() page for information on the framework contents, templates, examples, and more.
 
+<!-- Usage -->
+## Usage
+
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+
+_For more examples, please refer to the [Documentation](https://blnkoo.vercel.app)_
+
+<p align="right">(<a href="#rdme-top">back to top</a>)</p>
 
 <!-- Contributing -->
 ## Contributing
