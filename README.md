@@ -44,6 +44,17 @@ Several quick start options are available:
 - Install with Composer: ```composer require aakki16/blnkoo```
 - Read the [Getting started]() page for information on the framework contents, templates, examples, and more.
 
+<!-- ROADMAP -->
+#### Why use blnkoo
+
+- [ ] Open Source
+- [ ] Responsible
+- [ ] Customisable
+- [ ] Faster & Easier
+- [ ] Nested Feature
+
+See the [open issues](https://github.com/aakki16/Blnkoo/issues) for a full list of proposed features (and known issues).
+
 <!-- Usage -->
 ## Usage
 
