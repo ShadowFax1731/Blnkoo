@@ -48,6 +48,7 @@ Several quick start options are available:
 #### Why use blnkoo
 
 - [ ] Open Source
+- [ ] Modern 
 - [ ] Responsible
 - [ ] Customisable
 - [ ] Faster & Easier
