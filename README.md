@@ -43,7 +43,7 @@ Several quick start options are available:
 - Clone the repo: ```git clone https://github.com/aakki16/blnkoo.git```
 - Install with Composer: ```composer require aakki16/blnkoo```
 - Read the [Getting started]() page for information on the framework contents, templates, examples, and more.
-- Give a star ⭐.
+- Kindle give a star ⭐.
 
 <!-- ROADMAP -->
 #### Why use blnkoo
