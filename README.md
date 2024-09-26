@@ -89,8 +89,9 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#rdme-top">back to top</a>)</p>
 
-## License
+## Copyright and license
 
+Code and documentation 2024-24 the Blnkoo Authors.
 This project is licensed under the **MIT license**. Feel free to edit and distribute this template as you like.
 See [LICENSE](LICENSE) for more information.
 
