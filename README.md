@@ -1,6 +1,6 @@
 <a id="rdme-top"></a>
 
-<a href="https://github.com/aakki16/blnkoo/"> <img align='center' height="30" src="https://img.shields.io/badge/Hacktoberfest-2024-orange.svg?&style=for-the-badge&logo=KD&logoColor=blue" /> </a> <br>
+<a href="https://github.com/aakki16/blnkoo/"> <img align='center' height="30" src="https://img.shields.io/badge/Blnkoo-v1-orange.svg?&style=for-the-badge&logo=KD&logoColor=blue" /> </a> <br>
 
 <h1 align="center">
   <a href="https://github.com/aakki16/Blnkoo">
