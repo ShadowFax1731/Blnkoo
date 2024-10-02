@@ -8,7 +8,7 @@ This repository is made to help webdesigner & coders and all make their first we
 
 <h1 align="center">
   <a href="https://github.com/aakki16/Blnkoo">
-    <img src="./logo.svg" alt="Logo" width="250" height="250">
+    <img src="./logo.svg" alt="Logo" width="250" height="150">
   </a>
 </h1>
 
