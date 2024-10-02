@@ -12,6 +12,11 @@ This repository is made to help webdesigner & coders and all make their first we
   </a>
 </h1>
 
+### What is Blnkoo? 🤔
+
+Blnkoo - Sleek, intuitive, and powerful front-end framework for faster and easier web development. It's a free to use with the open-source community by Akki Team. 🌍
+
+<br>
 <div align="center">
   <br />
   <a href="https://github.com/aakki16/Blnkoo/issues/new?assignees=&labels=bug&template=BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
@@ -20,13 +25,6 @@ This repository is made to help webdesigner & coders and all make their first we
   .
   <a href="https://github.com/aakki16/Blnkoo/discussions">Ask a Question</a>
 </div>
-
----
-### What is Blnkoo? 🤔
-
-Blnkoo - Sleek, intuitive, and powerful front-end framework for faster and easier web development. It's a free to use with the open-source community by Akki Team. 🌍
-
-<br>
 <br />
 
 [![license](https://img.shields.io/github/license/aakki16/blnkoo
