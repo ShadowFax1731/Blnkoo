@@ -87,6 +87,12 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin 'Blnkoo'`)
 5. Open a Pull Request
 
+### Need Help? 🤔
+
+If you have any questions, feel free to ask [here](https://github.com/aakki16/blnkoo/discussions/categories/q-a).
+
+<br>
+
 ### Awesome Contributors 🌟
 
 <a href="">
