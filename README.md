@@ -24,14 +24,6 @@ This repository is made to help webdesigner & coders and all make their first we
 
 Blnkoo - Sleek, intuitive, and powerful front-end framework for faster and easier web development. It's a free to use with the open-source community by Akki Team. 🌍
 
-<div align="center">
-  <br />
-  <a href="https://github.com/aakki16/Blnkoo/issues/new?assignees=&labels=bug&template=BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
-  ·
-  <a href="https://github.com/aakki16/Blnkoo/issues/new?assignees=&labels=enhancement&template=FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
-  .
-  <a href="https://github.com/aakki16/Blnkoo/discussions">Ask a Question</a>
-</div>
 <br />
 
 [![license](https://img.shields.io/github/license/aakki16/blnkoo
