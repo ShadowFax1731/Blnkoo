@@ -1,118 +1,62 @@
 <a id="rdme-top"></a>
 
-<a href="https://github.com/aakki16/blnkoo/"> <img align='center' height="30" src="https://img.shields.io/badge/Blnkoo-v1-orange.svg?&style=for-the-badge&logo=KD&logoColor=blue" /> </a> <br>
+<p align="center"> <a href="https://github.com/aakki16/blnkoo/"> <img align='center' height="50" src="https://img.shields.io/badge/Blnkoo-v1-orange.svg?&style=for-the-badge&logo=KD&logoColor=blue" alt="Blnkoo"> </a> </p> <h1 align="center"> <strong>Welcome to Blnkoo 2024! 🎉</strong> </h1> <p align="center"> The go-to framework for web designers & developers to build their first website easily with <code>Blnkoo</code> 🌱. </p> <p align="center"> <a href="https://github.com/aakki16/Blnkoo/issues/new?assignees=&labels=bug&template=BUG_REPORT.md&title=bug%3A+">Report a Bug</a> · <a href="https://github.com/aakki16/Blnkoo/issues/new?assignees=&labels=enhancement&template=FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a> · <a href="https://github.com/aakki16/Blnkoo/discussions">Ask a Question</a> </p>
+<h2 align="center"> <a href="https://github.com/aakki16/Blnkoo"> <img src="./logo.svg" alt="Blnkoo Logo" width="300" height="200"> </a> </h2> <div align="center"> <br /> <a href="https://blnkoo.vercel.app"> <img src="https://img.shields.io/badge/View Documentation-green?style=for-the-badge&logo=readthedocs&logoColor=white" alt="View Documentation"> </a> </div>
+🚀 What is Blnkoo?
 
-## Welcome to Blnkoo 2024! 🎉
+Blnkoo is a sleek, intuitive, and powerful front-end framework designed to streamline web development. Whether you're building your first website or enhancing your design skills, Blnkoo simplifies your workflow with modern tools. It’s free and open-source, crafted with love by the Akki Team. 🌍
 
-This repository is made to help webdesigner & coders and all make their first website with ```Blnkoo``` easily 🌱
+<div align="center"> <a href="https://github.com/aakki16/Blnkoo/stargazers"> <img src="https://img.shields.io/github/stars/aakki16/blnkoo?style=social" alt="GitHub stars"> </a> <a href="https://github.com/aakki16/Blnkoo/network/members"> <img src="https://img.shields.io/github/forks/aakki16/blnkoo?style=social" alt="GitHub forks"> </a> <a href="https://github.com/aakki16/Blnkoo/issues"> <img src="https://img.shields.io/github/issues/aakki16/blnkoo?style=social" alt="GitHub issues"> </a> </div> <br />
+🎉 Quick Start
 
-<h1 align="center">
-  <a href="https://github.com/aakki16/Blnkoo">
-    <img src="./logo.svg" alt="Logo" width="250" height="150">
-  </a>
-</h1>
-<div align="center">
-  <br />
-  <a href="https://github.com/aakki16/Blnkoo/issues/new?assignees=&labels=bug&template=BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
-  ·
-  <a href="https://github.com/aakki16/Blnkoo/issues/new?assignees=&labels=enhancement&template=FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
-  .
-  <a href="https://github.com/aakki16/Blnkoo/discussions">Ask a Question</a>
-</div>
+Get started in just a few steps:
 
-### What is Blnkoo? 🤔
-
-Blnkoo - Sleek, intuitive, and powerful front-end framework for faster and easier web development. It's a free to use with the open-source community by Akki Team. 🌍
-
-<br />
-
-[![license](https://img.shields.io/github/license/aakki16/blnkoo
-)](LICENSE)
-
-[![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/aakki16/blnkoo/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
-[![Develop by Akki Team](https://img.shields.io/badge/made%20with%20%E2%99%A5%20by-Akki&nbsp;Team-ff1414.svg?style=flat-square)](https://github.com/Blnkoo)
-
-</div>
-
-<details open="open">
-<summary>Table of Contents</summary>
-
-- [Quick Start](#quick-start)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [License](#license)
-
-</details>
-
-## Quick Start
-Several quick start options are available:
 - [Download the lastest release](Download the latest release)
 - Clone the repo: ```git clone https://github.com/aakki16/blnkoo.git```
 - Install with Composer: ```composer require aakki16/blnkoo```
 - Read the [Getting started]() page for information on the framework contents, templates, examples, and more.
 - Kindle give a star ⭐.
 
-<!-- ROADMAP -->
-#### Why use blnkoo
+🔥 Why Choose Blnkoo?
 
-- [ ] Open Source
-- [ ] Modern 
-- [ ] Responsible
-- [ ] Customisable
-- [ ] Faster & Easier
-- [ ] Nested Feature
+✅ Open Source <br/>
+🚀 Modern & Fast <br/>
+🌍 Responsive & Accessible <br/>
+🎨 Highly Customizable <br/>
+🔧 Nested Features for Complex Projects <br/>
+Check out our open issues for a full list of features and known bugs. <br/>
 
-See the [open issues](https://github.com/aakki16/Blnkoo/issues) for a full list of proposed features (and known issues).
+📖 Usage
 
-<!-- Usage -->
-## Usage
+Blnkoo is designed for flexibility. You can use it to create a variety of web projects, from personal blogs to professional portfolios. <br/>
+Check out the Documentation for code examples, demos, and best practices.
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+💻 Contributing Guidelines
 
-_For more examples, please refer to the [Documentation](https://blnkoo.vercel.app)_
+We welcome contributions from everyone! 🎉 Please see the Contributing Guidelines for more information on how to help.
 
-<p align="right">(<a href="#rdme-top">back to top</a>)</p>
+<div align="center"> <a href="https://github.com/aakki16/Blnkoo/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22"> <img src="https://img.shields.io/badge/PRs-Welcome-pink?style=for-the-badge" alt="PRs Welcome"> </a> </div>
+🤔 Need Help?
 
-<!-- Contributing -->
-### Contributing Guidelines 🤝
+Feel free to ask any questions in our Q&A Discussions.
 
-Check the [Contributing Guidelines](https://github.com/aakki16/blnkoo/blob/master/CONTRIBUTING.md) for more information.
+👥 Awesome Contributors 🌟
 
-<br>
+A big thank you to all our amazing contributors! 🙌
 
-### Need Help? 🤔
+<div align="center"> <a href="https://github.com/aakki16/Blnkoo/graphs/contributors"> <img src="https://contrib.rocks/image?repo=aakki16/blnkoo" alt="Contributors"> </a> </div>
+📜 License
 
-If you have any questions, feel free to ask [here](https://github.com/aakki16/blnkoo/discussions/categories/q-a).
+This project is licensed under the MIT license. Feel free to edit, share, and distribute this project as you see fit. See LICENSE for details.
 
-<br>
+📞 Contact
 
-### Awesome Contributors 🌟
-
-<a href="">
-  <img src="https://contrib.rocks/image?repo=aakki16/Blnkoo" alt="contrib.rocks image" />
-</a>
+Akki Team - @your_twitter - akki.youto@gmail.com
 
 <p align="right">(<a href="#rdme-top">back to top</a>)</p>
+🎉✨ Happy Coding! ✨🎉
 
-## Copyright and license
-
-Code and documentation 2024-24 the Blnkoo Authors.
-This project is licensed under the **MIT license**. Feel free to edit and distribute this template as you like.
-See [LICENSE](LICENSE) for more information.
-
-<p align="right">(<a href="#rdme-top">back to top</a>)</p>
-
-<!-- Contact -->
-## Contact
-
-Akki Team - [@your_twitter](https://twitter.com/your_username) - akki.youto@gmail.com
-
-<p align="right">(<a href="#rdme-top">back to top</a>)</p>
-
----
-
-:tada: :confetti_ball: **Happy Coding!** :confetti_ball: :tada:
-
+ 
 ```
      _____ _                 _     __   __          
  |_   _| |__   __ _ _ __ | | __ \ \ / /__  _   _ 
@@ -120,4 +64,3 @@ Akki Team - [@your_twitter](https://twitter.com/your_username) - akki.youto@gmai
    | | | | | | (_| | | | |   <    | | (_) | |_| |
    |_| |_| |_|\__,_|_| |_|_|\_\   |_|\___/ \__,_|
 ```
-
