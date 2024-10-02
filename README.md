@@ -2,6 +2,10 @@
 
 <a href="https://github.com/aakki16/blnkoo/"> <img align='center' height="30" src="https://img.shields.io/badge/Blnkoo-v1-orange.svg?&style=for-the-badge&logo=KD&logoColor=blue" /> </a> <br>
 
+## Welcome to Blnkoo 2024! 🎉
+
+This repository is made to help webdesigner & coders and all make their first website with ```Blnkoo``` easily 🌱
+
 <h1 align="center">
   <a href="https://github.com/aakki16/Blnkoo">
     <img src="./logo.svg" alt="Logo" width="250" height="250">
