@@ -11,6 +11,14 @@ This repository is made to help webdesigner & coders and all make their first we
     <img src="./logo.svg" alt="Logo" width="250" height="150">
   </a>
 </h1>
+<div align="center">
+  <br />
+  <a href="https://github.com/aakki16/Blnkoo/issues/new?assignees=&labels=bug&template=BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
+  ·
+  <a href="https://github.com/aakki16/Blnkoo/issues/new?assignees=&labels=enhancement&template=FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
+  .
+  <a href="https://github.com/aakki16/Blnkoo/discussions">Ask a Question</a>
+</div>
 
 ### What is Blnkoo? 🤔
 
