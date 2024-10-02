@@ -13,8 +13,6 @@ This repository is made to help webdesigner & coders and all make their first we
 </h1>
 
 <div align="center">
-  Blnkoo - Sleek, intuitive, and powerful front-end framework for faster and easier web development.
-  <br />
   <br />
   <a href="https://github.com/aakki16/Blnkoo/issues/new?assignees=&labels=bug&template=BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
   ·
