@@ -87,7 +87,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin 'Blnkoo'`)
 5. Open a Pull Request
 
-### Top contributors:
+### Awesome Contributors 🌟
 
 <a href="">
   <img src="https://contrib.rocks/image?repo=aakki16/Blnkoo" alt="contrib.rocks image" />
