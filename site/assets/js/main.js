@@ -18,3 +18,10 @@ function openNav(){
 function closeNav(){
   document.getElementById("myNav").style.width = "0%";
 }
+
+// Toggle Dark Mode
+function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  darkModeToggle.innerHTML = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+}
