@@ -37,3 +37,15 @@
 .underline{
   text-decoration: underline;
 }
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+.dark-mode .border {
+  border-color: #333;
+}
+.dark-mode .bg-gray-100 {
+  background-color: #1f1f1f;
+}
