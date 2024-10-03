@@ -33,7 +33,7 @@ Check out the Documentation for code examples, demos, and best practices.
 
 💻 Contributing Guidelines
 
-We welcome contributions from everyone! 🎉 Please see the Contributing Guidelines for more information on how to help.
+We welcome contributions from everyone! 🎉 Please see the Contributing Guidelines for more information on how to help [Contributing Guideline](./.github/CONTRIBUTING.md).
 
 <div align="center"> <a href="https://github.com/aakki16/Blnkoo/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22"> <img src="https://img.shields.io/badge/PRs-Welcome-pink?style=for-the-badge" alt="PRs Welcome"> </a> </div>
 🤔 Need Help?
