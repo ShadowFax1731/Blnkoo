@@ -28,6 +28,21 @@ The core team will be looking at the open issues, analyze them, and provide guid
 
 Please keep in mind that the core team is small, has limited resources and that we are not always able to respond immediately. We will try to provide feedback as soon as possible, but please be patient. If you don't get a response immediately, it doesn't mean that we are ignoring you or that we don't care about your issue or PR. We will get back to you as soon as we can.
 
+## Issues and labels
+
+Our bug tracker utilizes several labels to help organize and identify issues. Here's what they represent and how we use them:
+
+- `browser bug` - Issues that are reported to us, but actually are the result of a browser-specific bug. These are diagnosed with reduced test cases and result in an issue opened on that browser's own bug tracker.
+- `confirmed` - Issues that have been confirmed with a reduced test case and identify a bug in Bootstrap.
+- `css` - Issues stemming from our compiled CSS or source Sass files.
+- `docs` - Issues for improving or updating our documentation.
+- `examples` - Issues involving the example templates included in our docs.
+- `feature` - Issues asking for a new feature to be added, or an existing one to be extended or modified.
+- `help wanted` - Issues we need or would love help from the community to resolve.
+- `js` - Issues stemming from our compiled or source JavaScript files.
+
+For a complete look at our labels, see the [project labels page](https://github.com/aakki16/blnkoo/labels).
+
 ## Bug reports
 
 A bug is a _demonstrable problem_ that is caused by the code in the repository.
