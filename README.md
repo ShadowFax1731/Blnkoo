@@ -40,11 +40,6 @@ We welcome contributions from everyone! 🎉 Please see the Contributing Guideli
 
 Feel free to ask any questions in our Q&A Discussions.
 
-👥 Awesome Contributors 🌟
-
-A big thank you to all our amazing contributors! 🙌
-
-<div align="center"> <a href="https://github.com/aakki16/Blnkoo/graphs/contributors"> <img src="https://contrib.rocks/image?repo=aakki16/blnkoo" alt="Contributors"> </a> </div>
 📜 License
 
 This project is licensed under the MIT license. Feel free to edit, share, and distribute this project as you see fit. See LICENSE for details.
