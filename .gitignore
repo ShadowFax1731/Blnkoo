@@ -1,4 +1,4 @@
-site/
+# site/
 
 # Numerous always-ignore extensions
 *.diff
